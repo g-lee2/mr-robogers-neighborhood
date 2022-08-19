@@ -14,6 +14,12 @@ function returnNumber(number) {
         console.log(returnNumberArray)
       }
     }
-  };
+      for (let i = 0; i < returnNumberArray.length; i++) {
+        if (returnNumberArray[i] === 2) {
+          returnNumberArray[i] = "Boop!"
+          console.log(returnNumberArray)
+        }
+      };
+}
 
  
