@@ -1,5 +1,5 @@
 
-// const replaceNumber = document.getElementById("replaceNumber").value;
+// 
 
 function returnNumber(number) {
   const returnNumberArray = []
@@ -7,17 +7,14 @@ function returnNumber(number) {
   for (let i = 0; i <= number; i++) {
     returnNumberArray.push(i.toString());
     }
-    console.log(returnNumberArray);
     for (let i = 0; i < returnNumberArray.length; i++) {
       if (returnNumberArray.includes("1")) {
         returnNumberArray["1"] = "Beep!"
-        console.log(returnNumberArray)
       }
     }
       for (let i = 0; i < returnNumberArray.length; i++) {
         if (returnNumberArray.includes("2")) {
           returnNumberArray["2"] = "Boop!"
-          console.log(returnNumberArray)
         }
       }
         for (let i = 0; i < returnNumberArray.length; i++) {
@@ -29,4 +26,15 @@ function returnNumber(number) {
 }
 
 
- 
+window.onload = function() {
+  document.querySelector("form").onsubmit = function(event) {
+    event.preventDefault();
+
+    const const replaceNumber = document.getElementById("replaceNumber").value;
+    
+
+    if (valid) {
+      document.querySelector(".message").innerText = returnNumberArray.toString;
+    } 
+  } 
+}
