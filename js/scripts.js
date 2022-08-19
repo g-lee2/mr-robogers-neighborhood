@@ -19,7 +19,13 @@ function returnNumber(number) {
           returnNumberArray[i] = "Boop!"
           console.log(returnNumberArray)
         }
-      };
+      }
+        for (let i = 0; i < returnNumberArray.length; i++) {
+          if (returnNumberArray[i] === 3) {
+            returnNumberArray[i] = "Won't you be my neighbor?"
+            console.log(returnNumberArray)
+          }
+        };
 }
 
  
