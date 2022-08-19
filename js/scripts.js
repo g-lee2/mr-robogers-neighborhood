@@ -6,12 +6,13 @@ function returnNumberArray(input) {
   return numberArray;
 } 
 
-function replaceNumber(numberArray) {
+function replaceNumber(numberArray, target, replacement) {
   for (let i = 0; i < numberArray.length; i++) {
-    // numberArray = [0, 1, 2, 3, 4, 5]
     if (numberArray[i].toString().includes("1")) {
       numberArray[i] = "Beep!";
     }
   }
   return numberArray;
 }
+
+
