@@ -16,7 +16,7 @@ Test: "It should now return an array of numbers from 0 to the user's inputted nu
 Code: returnNumber(5);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
 
-Test: "It should now replace double digits with 1 included with "Beep!"
+Test: "It should now replace double digits that include 1 with "Beep!"
 Code: returnNumber(11);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]
 
@@ -46,7 +46,7 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 
 ## Description
 
-_It is a website where a user inputs numbers to recieve a message from Mr. Roboger. Depending on the inputted number, if it includes the number 1, it would be replaced with a "Beep!". If it includes the number 2, it would be replaced with a "Boop". And if it includes the number 3, it would be replaced with a "Won't you be my neighbor?". These messages appear regardless of if the number is double digits. As long as it contains 1, 2, or 3, those messages will appear. However, if two or more of the numbers 1, 2, 3 appear, the number that is the largest's message will appear. For example, if the inputted number is 23, the message "Won't you be my neighbor?" will appear, as 3 is the larger number of the two. 
+_It is a website where a user inputs a number to receive a message from Mr. Roboger. Depending on the inputted number, if it includes the number 1, it would be replaced with a: "Beep!". If it includes the number 2, it would be replaced with a: "Boop". And if it includes the number 3, it would be replaced with a: "Won't you be my neighbor?". These messages appear regardless of if the number is double digits or even greater. As long as it contains 1, 2, or 3, those messages will appear. However, if two or more of the numbers 1, 2, 3 appear, the number that is the largest's message will appear. For example, if the inputted number is 23, the message "Won't you be my neighbor?" will appear, as 3 is the larger number of the two._
 
 ## Setup/Installation Requirements
 
