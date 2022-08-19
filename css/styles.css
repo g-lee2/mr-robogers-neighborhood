@@ -1,6 +1,37 @@
 body {
-  background-color: azure;
+  background-color: rgb(217, 216, 232);
 }
+
+.main-header {
+  text-align: center;
+  font-family: monospace;
+}
+
 .center-of-site {
   border: 5px solid rgb(39, 39, 104);
+  max-width: 500px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 10%;
 }
+
+.center-of-site h1 {
+    font-family: monospace;
+  
+}
+
+.the-result{
+  border: 5px solid rgb(39, 39, 104);
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 10%;
+}
+
+.the-result h1 {
+  font-family: monospace;
+}
+
