@@ -51,7 +51,7 @@ SOFTWARE.
 
 Copyright (c) _2022_ _Grace Lee_
 
-Test-driven Development
+## Test-driven Development
 
 Describe: returnNumberArray()
 
@@ -78,3 +78,8 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 Test: "It should replace 2 with "Boop!", regardless of how many digits the inputted number is" 
 Code: returnNumber(12);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!"]
+
+Test: "It should replace 3 with "Won't you be my neighbor?", regardless of how many digits the inputted number is" 
+Code: returnNumber(13);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]
+
