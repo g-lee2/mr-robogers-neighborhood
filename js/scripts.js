@@ -3,9 +3,18 @@ function returnNumberArray(input) {
   for (let i = 0; i <= input; i++) {
     numberArray.push(i);
   } 
+  for (let i = 0; i < numberArray.length; i++) {
+    if (numberArray[i].toString().includes("1")) {
+      numberArray[i] = "Beep!";
+    }
+  }
+  for (let i = 0; i < numberArray.length; i++) {
+    if (numberArray[i].toString().includes("2")) {
+      numberArray[i] = "Boop!";
+    }
+  }
   return numberArray;
-} 
-
+}
 
 
 
