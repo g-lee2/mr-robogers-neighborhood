@@ -4,13 +4,13 @@ function returnNumberArray(input) {
     numberArray.push(i);
   } 
   for (let i = 0; i < numberArray.length; i++) {
-    if (numberArray[i].toString().includes("1")) {
-      numberArray[i] = "Beep!";
+    if (numberArray[i].toString().includes("2")) {
+      numberArray[i] = "Boop!";
     }
   }
   for (let i = 0; i < numberArray.length; i++) {
-    if (numberArray[i].toString().includes("2")) {
-      numberArray[i] = "Boop!";
+    if (numberArray[i].toString().includes("1")) {
+      numberArray[i] = "Beep!";
     }
   }
   for (let i = 0; i < numberArray.length; i++) {
