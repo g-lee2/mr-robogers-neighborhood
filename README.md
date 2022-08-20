@@ -4,8 +4,6 @@
 
 #### _A simple website that showcases a message by Mr. Roboger based on inputted numbers_
 
-#### [Click here]() to check out my GitHub pages. 
-
 ## Technologies Used
 
 * _HTML_
@@ -21,7 +19,6 @@ _It is a website where a user inputs a number to receive a message from Mr. Robo
 * _Clone this repository to your desktop._
 * _Go into this project's directory on your desktop._
 * _Find and open the index.html in your browser._
-* _Or simply click on the GitHub pages link to view in browser._
 
 ## Known Bugs
 
