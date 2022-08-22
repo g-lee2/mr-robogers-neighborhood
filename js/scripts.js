@@ -21,6 +21,10 @@ function returnNumberArray(input) {
   return numberArray;
 }
 
+function noNumberInput() {
+    document.querySelector(".message").innerText = "No number detected! Please enter a number!"; 
+}
+
 window.onload = function() {
   document.querySelector("form").onsubmit = function(event) {
     event.preventDefault();
@@ -28,7 +32,11 @@ window.onload = function() {
     const inputNumber = document.getElementById("inputNumber").value;
     console.log(inputNumber);
     returnNumberArray(inputNumber);
-    document.querySelector(".message").innerText = returnNumberArray(inputNumber);
+    if (!document.getElementById("inputNumber").value) {
+      noNumberInput();
+    } else {
+      document.querySelector(".message").innerText = returnNumberArray(inputNumber);
+    }
   }
 }
 
