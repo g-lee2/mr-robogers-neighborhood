@@ -5,7 +5,7 @@ function returnNumberArray(input) {
   } 
   for (let i = 0; i < numberArray.length; i++) {
     if (numberArray[i].toString().includes("3")) {
-      numberArray[i] = " \"Won't you be my neighbor?\"";
+      numberArray[i] = "\"Won't you be my neighbor, " + document.getElementById("inputName").value + "?\""
     }
   }
   for (let i = 0; i < numberArray.length; i++) {
@@ -21,10 +21,6 @@ function returnNumberArray(input) {
   return numberArray;
 }
 
-function noNumberInput() {
-    document.querySelector(".message").innerText = "No number detected! Please enter a number!"; 
-}
-
 window.onload = function() {
   document.querySelector("form").onsubmit = function(event) {
     event.preventDefault();
@@ -33,7 +29,7 @@ window.onload = function() {
     console.log(inputNumber);
     returnNumberArray(inputNumber);
     if (!document.getElementById("inputNumber").value) {
-      noNumberInput();
+      document.querySelector(".message").innerText = "No number detected! Please enter a whole number!";
     } else {
       document.querySelector(".message").innerText = returnNumberArray(inputNumber);
     }
